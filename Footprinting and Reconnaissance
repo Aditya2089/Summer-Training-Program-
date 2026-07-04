@@ -1,0 +1,133 @@
+• Footprinting and Reconnaissance :-
+
+The process of gathering data from publicly accessible sources on a target company, 
+network, website, or person is known as "footprinting." It is the initial stage of 
+penetration testing and ethical hacking.
+
+• Footprinting Methodology :-
+
+A standard footprinting methodology consists of:
+Step 1: Target Identification
+Identify the organization or website.
+Step 2: Information Gathering
+Collect public information.
+Step 3: DNS Enumeration
+Gather DNS records.
+Step 4: Network Discovery
+Identify IP addresses and routes.
+Step 5: Website Analysis
+Analyze website technologies.
+Step 6: Documentation
+Prepare a report.  
+
+• Footprinting through Search Engines :-
+
+Millions of webpages are indexed by search engines. Google Dorks assist in finding particular information.
+
+Practical
+Search:
+site:coursera.org
+Result:
+Indexed pages discovered.
+Search:
+site:coursera.org filetype:pdf
+Result:
+PDF documents identified.
+Search:
+site:coursera.org contact
+Result:
+Contact information found.
+
+• Footprinting through Web Services :- 
+
+Web services offer details about DNS records, hosting companies, domains, and technology.
+
+Common Services:-
+• NetCraft - https://sitereport.netcraft.com/?utm_source=chatgpt.com
+• DNSchecker - https://dnschecker.org/?utm_source=chatgpt.com
+• ViewDNS.info - https://viewdns.info/?utm_source=chatgpt.com
+
+• Footprinting through Social Networking Sites
+
+Organizations and employees share information on social media that may reveal organizational data.
+
+Sources :-
+• LinkedIN - https://www.linkedin.com/?utm_source=chatgpt.com
+• Facebook - https://www.facebook.com/?utm_source=chatgpt.com
+• X(twitter) - https://x.com/?utm_source=chatgpt.com
+
+• WHOIS Footprinting
+
+WHOIS provides domain registration information.
+
+Information Available :-
+• Registrar
+• Registration Date
+• Expiration Date
+• Name Servers
+
+• DNS Footprinting
+
+DNS stores records used to resolve domain names.
+
+Common Records:- 
+Record        |      Purpose
+-----------------------------------------------
+A             |      IP Address
+MX            |      Mail Server
+NS            |      Name Server
+TXT           |      Verification Information
+-----------------------------------------------
+
+• Network Footprinting
+
+Network footprinting gathers network-related information.
+
+Information Collected :-
+• IP addresses
+• Routes
+• Open services
+• Network topology 
+
+• Footprinting through Social Engineering
+
+Social engineering footprinting collects information from human sources.
+
+Methods :-
+• Phone calls
+• Surveys
+• Interviews
+• Social media interactions 
+
+• Footprinting Tools
+
+Specialized tools automate information gathering.
+Popular Tools :-
+Tool                                                                     |          Purpose                
+------------------------------------------------------------------------------------------------------
+Maltego - https://www.maltego.com/?utm_source=chatgpt.com                |        OSINT Mapping  
+FOCA Github - https://github.com/ElevenPaths/FOCA?utm_source=chatgpt.com |       Metadata Analysis
+SpiderFoot - https://www.spiderfoot.net/?utm_source=chatgpt.com          |       Automated OSINT
+Wireshark - https://www.wireshark.org/?utm_source=chatgpt.com            |       Packet Analysis
+Nmap - https://nmap.org/?utm_source=chatgpt.com                          |       Network Discovery
+------------------------------------------------------------------------------------------------------
+
+• Footprinting Countermeasures 
+
+Organizations should reduce information exposure.
+
+Countermeasures :-
+1. Hide sensitive documents.
+2. Remove metadata from files.
+3. Use privacy-protected registration where appropriate.
+4. Limit employee information exposure.
+5. Secure DNS infrastructure.
+6. Implement security headers.
+7. Conduct security awareness training.
+
+-----------------------------------------------------------------END-------------------------------------------------------------------
+
+
+
+
+
