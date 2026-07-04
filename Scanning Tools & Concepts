@@ -1,0 +1,203 @@
+Scanning Tools & Concepts :-
+
+Network Scanning Concepts
+
+Finding active hosts, open ports, running services, operating systems, 
+and vulnerabilities within a network is known as network scanning.
+
+It is a critical phase of:
+• Ethical Hacking
+• Penetration Testing
+• Vulnerability Assessment 
+• Network Administration 
+
+• Objectives of Network Scanning
+
+1. Discover live hosts.
+2. Identify open ports.
+3. Detect running services.
+4. Determine operating systems.
+5. Identify network topology.
+6. Discover security weaknesses. 
+
+• Network Scanning Phases :-
+
+Target Identification
+         ↓
+   Host Discovery
+         ↓
+   Port Discovery
+         ↓
+ Service Enumeration
+         ↓
+  OS Fingerprinting
+         ↓
+Vulnerability Assessment
+
+Types of Scanning :-
+
+Type                                 |      Purpose
+----------------------------------------------------------------------------
+Network Scanning                     |      Discover devices
+Port Scanning                        |      Find open ports
+Vulnerability Scanning               |      Identify weaknesses
+Service Scanning                     |      Identify services
+OS Scanning                          |      Identify operating systems
+-----------------------------------------------------------------------------
+
+• Scanning Tools Using Windows OS
+
+• Nmap (Network Mapper)
+
+Nmap is the most widely used network scanning tool. 
+
+It is used for:
+• Host discovery
+• Port scanning
+• Service identification
+• OS detection
+• Network inventory
+• Security auditing
+
+• Installation on Windows
+
+Download from:
+Nmap Official Website - https://nmap.org/
+After installation:
+nmap --version (in cmd/poweshell)
+Expected Output:
+Nmap version 7.97
+
+• Introduction to Host Discovery
+
+Host Discovery is the process of identifying live (active) hosts/devices on a
+network before performing further enumeration such as port scanning, service
+detection, or vulnerability assessment.
+
+A host can be:
+• Desktop computer
+• Laptop
+• Server
+• Router
+• Switch (management interface)
+• Printer
+• IoT device
+• Mobile phone
+
+Why Host Discovery is Important?
+
+Before scanning ports, you must know:
+• Which systems are online?
+• Which IP addresses are in use?
+• Which hosts respond to network requests? 
+
+• Types of Host Discovery Techniques
+
+Technique                   |  Protocol Used
+------------------------------------------------
+ICMP Ping Sweep             |       ICMP
+ARP Scan                    |       ARP
+TCP Ping                    |       TCP
+UDP Ping                    |       UDP
+NetBIOS Discovery           |     NetBIOS
+DNS Discovery               |       DNS
+------------------------------------------------
+
+• ICMP Ping Sweep
+
+ICMP (Internet Control Message Protocol) is commonly used to determine
+whether a host is reachable.
+
+How It Works
+Scanner → ICMP Echo Request
+Target → ICMP Echo Reply
+If Echo Reply is received: Host is Alive
+
+• ARP Discovery
+
+ARP (Address Resolution Protocol) maps IP addresses to MAC addresses.
+
+How It Works
+Who has 192.168.1.10?
+Tell 192.168.1.100
+Target replies:
+192.168.1.10 is at
+00:11:22:33:44:55
+
+• TCP Ping Discovery
+
+Some hosts block ICMP requests.
+Instead, send a TCP packet to a common port.
+
+Example
+TCP SYN → Port 80
+If a response is received:
+Host is likely active
+
+• UDP Ping Discovery
+
+UDP packets are sent to a target port.
+
+Common target:
+53 DNS
+161 SNMP
+Response
+If an ICMP Port Unreachable message is returned:
+Host is alive
+
+• NetBIOS Discovery (Windows Networks)
+
+Windows systems often use NetBIOS for file and printer sharing.
+Common Port - 137 UDP
+
+• DNS-Based Discovery
+
+DNS can reveal active systems.
+
+Example Records
+server.company.com
+mail.company.com
+vpn.company.com
+
+• Nmap
+
+Most Popular Tool
+
+Capabilities:
+• ICMP Discovery
+• ARP Discovery
+• TCP Discovery
+• UDP Discovery
+
+Examples
+nmap -sn 192.168.1.0/24
+nmap -PR 192.168.1.0/24
+nmap -PS80 192.168.1.0/24
+
+• Zenmap
+
+GUI version of Nmap.
+
+• Angry IP Scanner
+
+Installation - https://angryip.org/?utm_source=chatgpt.com
+
+• Advanced IP Scanner
+
+Features
+• Host Discovery
+• Shared Folder Detection
+• Remote Access
+
+• Wireshark (Verification Tool)
+
+Purpose - Capture discovery packets.
+
+Practical file provided seperately.
+
+-----------------------------------------------------------------END-------------------------------------------------------------------
+
+
+
+
+
